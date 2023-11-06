@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITMO Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <label class="box">
+      <h1 id="title" class="center">ITMO Study Form</h1>
+      <p id="description" class=" desc center">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <label class="form" id="name-label" for="name"> 
+          <label class="text">Name</label>
+          <input class="form-text" id="name" type="text" placeholder="Enter your name" required>
+        </label>
+        <label class="form" id="email-label" for="email">
+          <label class="text">Email</label>
+          <input class="form-text" id="email" type="email" placeholder="Enter your email" required>
+        </label>
+        <label class="form" id="number-label" for="age">
+          <label class="text">Age</label>
+          <input class="form-text" id="number" type="number" min="18" max="67" placeholder="Age" required>
+        </label>
+        <label class="form">
+          <p>Would you recommend ITMO to a friend?</p>
+          <label>
+            <input class="choice" name="recommend" type="radio" value="definitely" checked>
+            Definitely
+          </label>
+          <label>
+            <input class="choice" name="recommend" type="radio" value="maybe">
+            Maybe
+          </label>
+          <label>
+            <input class="choice" name="recommend" type="radio" value="not sure">
+            Not sure
+          </label>
+        </label>
+        <label class="form"> 
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select one</option>
+            <option value="student">Student</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="master">Master</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label class="form">
+          <p>What is your favourite language?</p>
+          <label>
+            <input class="choice" name="prefer" type="checkbox" value="js">
+            Javascript
+          </label>
+          <label>
+            <input class="choice" name="prefer" type="checkbox" value="sharp">
+            C#
+          </label>
+          <label>
+            <input class="choice" name="prefer" type="checkbox" value="java">
+            Java
+          </label>
+          <label>
+            <input class="choice" name="prefer" type="checkbox" value="python">
+            Python
+          </label>
+          <label>
+            <input class="choice" name="prefer" type="checkbox" value="nn">
+            None of them
+          </label>
+        </label>
+        <label class="form">
+          <p>
+            Any comments or suggestions? 
+            <span>Not necessary</span>
+          </p>
+          <textarea name="comment" id="comments" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+        </label class="form">
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </label>
+  </body>
+</html>
